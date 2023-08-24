@@ -117,7 +117,6 @@ $$ (\prod_{k=m}^{n} a_k) \cdot (\prod_{k=m}^{n} b_k) = \prod_{k=m}^{n} (a_k \cdo
 
 $$ \sum_{k=m}^{n} a_k + \sum_{k=n+1}^{p} a_k = \sum_{k=m}^{p} a_k $$
 
-
 ### Factorial
 
 > DEFINICIÓN: Para cada entero postivo $n$, la cantidad *$n$ factorial*
@@ -142,13 +141,15 @@ $$ \sum_{k=m}^{n} a_k + \sum_{k=n+1}^{p} a_k = \sum_{k=m}^{p} a_k $$
 > \end{array}
 > \right)
 > $$
-> Se lee *"$n$ se seleccionan $r$"* y representa el número de subconjuntos de
-> tamaño $r$ que se pueden elegir de un conjunto con $n$ elementos.
-> 
+>
+> Se lee *"$n$ se seleccionan $r$"* y representa el número de
+> subconjuntos de tamaño $r$ que se pueden elegir de un conjunto con $n$
+> elementos.
+>
 > Fórmula:
-> 
+>
 > Para todo entero $n$ y $r$ con $0 \le r \le n$,
-> 
+>
 > $$
 > \left(
 > \begin{array}{l}
@@ -163,12 +164,13 @@ $$ \sum_{k=m}^{n} a_k + \sum_{k=n+1}^{p} a_k = \sum_{k=m}^{p} a_k $$
 
 ### Ejemplos
 
----
+------------------------------------------------------------------------
 
 $$ \frac{8 \cdot 7!}{7!} = 8 $$
+
 *Los factoriales se cancelan*
 
----
+------------------------------------------------------------------------
 
 ### Suma telescópica
 
@@ -296,9 +298,9 @@ $$ a_k = \frac{k}{(k + 1)^2} \forall k \in \mathbb{N} \ge 1$$
 
 Fórmula general sumatoria:
 
-\$\$ `\sum`{=tex}\_{k=1}\^{k=n} `\frac{k}{(k+1)^2}`{=tex} =
-
-\$\$
+$$
+\sum_{k=1}^{k=n} \frac{k}{(k+1)^2}=
+$$
 
 ### 15
 

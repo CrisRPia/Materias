@@ -173,7 +173,7 @@ $$ \frac{8 \cdot 7!}{7!} = 8 $$
 ### Suma telescópica
 
 $$
-\sum_{k=1}^{n} \frac{1}{k(k+1)} \rarr
+\sum_{k=1}^{n} \frac{1}{k(k+1)} \rightarrow
 \sum_{k=1}^{n} \frac{1}{k} - \frac{1}{k+1} =
 \frac{1}{1} - \frac{1}{2} +
 \frac{1}{2} - \frac{1}{3} +

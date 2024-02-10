@@ -1,0 +1,45 @@
+\documentclass{report}
+
+\usepackage{fancyhdr}
+\begin{document}
+\title{Notas sobre Números Naturales}
+\author{Cristian Rodríguez}
+\maketitle
+
+\chapter{Propiedades}
+\section{Adición o suma}
+
+\begin{itemize}
+    \item Propiedad conmutativa: $3 + 4 = 4 + 3$
+    \item Propiedad asociativa: $(8 + 2) + 4 = 8 + (2 + 4)$
+    \item Elemento Neutro: $7 + 0 = 7$
+\end{itemize}
+
+\section{Sustracción o resta}
+\begin{itemize}
+    \item No cumple conmutativa ni asociativa.
+\end{itemize}
+
+\section{Producto o multiplicación.}
+
+\begin{itemize}
+    \item Propiedad conmutativa: $25 \cdot 5 = 5 \cdot 25$
+    \item Propiedad asociativa: $(25 \cdot 5) \cdot 2 = 5 \cdot (25 \cdot 2)$
+    \item Elemento neutro: $5 \cdot 1 = 5$
+    \item Propiedad distributiva: $(10 + 8) \cdot 6 = 10 \cdot 6 + 8 \cdot 6$
+\end{itemize}
+
+\section{Cociente o división}
+
+\begin{itemize}
+    \item No cumple conmutativa
+    \item No cumple asociativa
+    \item Elemento neutro: $5 \div 1 = 5$
+    \item La distributiva respecto a la suma o la resta sólo es posible si el
+        número a distribuir se encuentra a la derecha de la suma o de la resta
+        (del dividendo):
+        $$ (20 + 36) \div 2 = 20 \div 2 + 36 \div 2 $$
+\end{itemize}
+
+
+\end{document}

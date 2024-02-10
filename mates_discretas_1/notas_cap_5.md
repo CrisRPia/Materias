@@ -81,7 +81,7 @@ $\rightarrow a_k = \frac{(-1)^k}{(k + 1)^2} \text{ para todo entero } k \ge 0.$
 > \sum_{k=m}^{m} a_k = a_m
 > \text{ y } \sum_{k=m}^{n} a_k =
 > \sum_{k=m}^{n - 1} a_k + a_n
-> \text{ para todo entero } n \gt m.
+> \text{ para todo entero } n > m.
 > $$
 >
 > Cuando se resuelven problemas, con frecuencia es útil reescribir una
@@ -111,7 +111,10 @@ $$ c \cdot \sum_{k=m}^{n} a_k = \sum_{k=m}^{n} c \cdot a_k $$
 
 #### 3
 
-$$ (\prod_{k=m}^{n} a_k) \cdot (\prod_{k=m}^{n} b_k) = \prod_{k=m}^{n} (a_k \cdot b_k) $$
+$$
+\left( \prod_{k=m}^{n} a_k \right) \cdot \left( \prod_{k=m}^{n} b_k \right)
+= \prod_{k=m}^{n} (a_k \cdot b_k)
+$$
 
 #### 4
 
@@ -159,6 +162,52 @@ $$ \sum_{k=m}^{n} a_k + \sum_{k=n+1}^{p} a_k = \sum_{k=m}^{p} a_k $$
 > \right)
 > = \frac{n!}{r!(n - r)!}
 > $$
+
+# Inducción matemática (5.2)
+
+### Etapas
+
+1.  Base inductiva: probar que la supocisión se cumple para $n \in N$
+    específico.
+
+2.  Hipótesis inductiva: Se sustituye $n = h$.
+
+3.  Tesis inductiva: Se sustituye $n = h + 1$. Es lo que debo demostrar
+    a partir de la Hipótesis.
+
+4.  Demostración.
+
+## Definición
+
+Sea $P(n)$ una propiedad que se define para enteros $n$ y sea $a$ un
+entero fijo. Suponga que los siguientes dos enunciados son verdaderos:
+
+1.  $P(n)$ es verdadera.
+
+2.  Para todo entero $k \ge a$, si $P(k)$ es verdadera entonces $P(k+1)$
+    es verdadera.
+
+Entonces, el enunciado
+
+$$
+    \text{para todo entero } n \ge a, P(n)
+$$
+
+es verdadero.
+
+# Inducción matemática II
+
+???
+
+# Definiciones
+
+### Múltiplo:
+
+$$ a = \dot{b} \iff \exists k \in N / a = b \cdot h  $$
+
+### Divisible:
+
+$$ a / b \iff \exists k \in N/ b = b \cdot k  $$
 
 # No imprimir
 
@@ -221,12 +270,10 @@ $$
 $$
 
 $$
-\begin{align}
-    b_0 &= (0 - 1) ^ 3 + 0 + 2 = -1 + 2 = 1, \\
-    b_1 &= (1 - 1) ^ 3 + 1 + 2 = 1 + 2 = 3, \\
-    b_2 &= (2 - 1) ^ 3 + 2 + 2 = 1 + 2 + 2 = 5, \\
-    b_3 &= (4 - 1) ^ 3 + 4 + 2 = 27 + 4 + 2 = 33
-\end{align}
+    b_0 = (0 - 1) ^ 3 + 0 + 2 = -1 + 2 = 1, \\
+    b_1 = (1 - 1) ^ 3 + 1 + 2 = 1 + 2 = 3, \\
+    b_2 = (2 - 1) ^ 3 + 2 + 2 = 1 + 2 + 2 = 5, \\
+    b_3 = (4 - 1) ^ 3 + 4 + 2 = 27 + 4 + 2 = 33
 $$
 
 ## 5.1
@@ -324,7 +371,7 @@ $$3, 6, 12, 24, 48, 96$$
 
 Fórmula:
 
-$$ a_k = 3 \cdot 2^k, \text{ para todo entero } k \ge 0 $$
+$$ a_k = 3 \cdot 2^{k - 1}, \text{ para todo entero } k \ge 1 $$
 
 Fórmula general sumatoria:
 

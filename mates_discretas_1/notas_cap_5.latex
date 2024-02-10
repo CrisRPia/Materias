@@ -1,0 +1,245 @@
+\documentclass{report}
+
+\usepackage{fancyhdr}
+\begin{document}
+\title{Notas del capítulo 5: sucesiones, inducción matemática y recurrencia.}
+\author{Cristian Rodríguez.}
+\maketitle
+
+\section{Sucesión}
+
+Una sucesión es una función cuyo dominio es ya sean todos
+los naturales entre dos naturales dados o todos los naturales mayores
+o iguales a un natural dado.
+
+Definición de la profe: Es una función que tiene por dominio el
+conjunto de los naturales.
+
+\subsection{Y así sucesivamente}
+
+$$
+2, 4, 8, 16, 32, 64, 128 \ldots \longrightarrow A_k = 2^k
+$$
+
+$a_k$ se lee "a subíndice k"; cada elemento suyo se denomina término.
+
+\subsection{Notación de sucesión}
+
+Notación hasta n: $a_m, a_{m + 1}, a_{m + 2}, \ldots, a_n,$.
+
+\noindent
+Notación infinita: $a_m, a_{m + 1}, a_{m + 2}, \ldots$
+
+Una \textit{fórmula explícita} o \textit{fórmula general} para una sucesión es una
+regla que muestra cómo los valores de $a_k$ dependen de $k$, por ejemplo
+$a_k = 2^k$.
+
+\subsection{Valores}
+
+Las sucesiones infinitas pueden tener valores finitos; $c_j = (-1)^j$
+para todo entero $j \ge 0$.
+
+Dos fórmulas diferentes pueden dar a sucesiones con los mismos
+términos:
+
+$$
+    a_k = \frac{k}{k + 1} \forall k \in Z k \ge 1,
+$$
+
+$$
+    b_i = \frac{i - 1}{i} \forall i \in Z \ge 2.
+$$
+
+\section{notación de suma}
+DEFINICIÓN: Si $m$ y $n$ son números naturales y $m \le n$, el símbolo
+
+$$\sum_{k=m}^{n} a_k$$
+
+Se lee como la suma desde $k$ igual a $m$ a $n$ de $a$ subíndice $k$,
+es la suma detodos los términos de
+$a_m, a_{m + 1}, a_{m + 2}, \ldots a_n$. Decimos que
+$a_m, a_{m + 1}, a_{m + 2}, \ldots a_n$ es la forma desarollada de la
+suma y se escribe como
+
+$$\sum_{k=m}^{n} a_k = a_m, a_{m + 1}, a_{m + 2}, \ldots a_n.$$
+
+LLamamos a $k$ al \textit{índice} de la suma, a m al \textit{límite inferior} de la
+suma y a $n$ al \textit{límite superior} de la suma.
+
+\section{Definición recursiva}
+
+Una definición matemática más precisa de la suma, llamada una
+definición recursiva, es la siguiente: Si m es cualquier entero,
+entonces
+
+$$
+\sum_{k=m}^{m} a_k = a_m
+\textrm{ y } \sum_{k=m}^{n} a_k =
+\sum_{k=m}^{n - 1} a_k + a_n
+\forall n \in N > m
+$$
+
+Cuando se resuelven problemas, con frecuencia es útil reescribir una
+suma usando la forma recursiva de la definición ya sea separando el
+término final de una suma o agregando un término final a una suma.
+
+\section{Notación de producto}
+
+DEFINICIÓN: Si $m$ y $n$ son enteros y $m \le n$, el símbolo
+
+$$\prod_{k=m}^{n}$$
+
+\noindent
+se lee como la *forma de producto de $k$ es igual a $m$ a $n$ de $a$
+subíndice $k$*, es el producto de todos los términos,
+$a_m, a_{m + 1}, a_{m + 2}, \ldots, a_n$. Se escribe
+
+$$ \prod_{k=m}^{n} a_k = a_m, a_{m + 1}, a_{m + 2}, \ldots, a_n.$$
+
+\subsection{Propiedades}
+
+\begin{enumerate}
+
+\item $$ \sum_{k=m}^{n} a_k + \sum_{k=m}^{n} b_k = \sum_{k=m}^{n} (a_k + b_k) $$
+
+\item $$ c \cdot \sum_{k=m}^{n} a_k = \sum_{k=m}^{n} c \cdot a_k $$
+
+\item $$ (\prod_{k=m}^{n} a_k) \cdot (\prod_{k=m}^{n} b_k) = \prod_{k=m}^{n} (a_k \cdot b_k) $$
+
+\item $$ \sum_{k=m}^{n} a_k + \sum_{k=n+1}^{p} a_k = \sum_{k=m}^{p} a_k $$
+
+\end{enumerate}
+
+\section{Factorial}
+
+DEFINICIÓN: Para cada entero postivo $n$, la cantidad \textit{$n$ factorial}
+que se denota por $n!$, se define como el producto de todos los
+enteros de 1 a $n$.
+
+$$ n! = n \cdot (n - 1) \ldots 3 \cdot 2 \cdot 1. $$
+
+        \textit{Cero factorial}, que se denota por $0!$, se define como 1:
+
+$$ 0! = 1. $$
+
+\section{Combinaciones}
+
+DEFINICIÓN: Sean $n$ y $r$ enteros con $0 \le r \le n.$ El símbolo
+
+$$ 
+\left(
+\begin{array}{lcr}
+n \\
+r
+\end{array}
+\right)
+$$
+
+Se lee \textit{'$n$ se seleccionan $r$'} y representa el número de
+subconjuntos de tamaño $r$ que se pueden elegir de un conjunto con $n$
+elementos.
+
+Fórmula: Para todo entero $n$ y $r$ con $0 \le r \le n$,
+
+$$
+\left(
+\begin{array}{l}
+n \\
+r
+\end{array}
+\right)
+= \frac{n!}{r!(n - r)!}
+$$
+
+\section{Inducción matemática}
+
+
+\subsection{Etapas}
+
+\begin{enumerate}
+    \item Base inductiva: probar que la supocisión se cumple para $n \in N$
+          específico.
+
+    \item Hipótesis inductiva: Se sustituye $n = h$.
+
+    \item Tesis inductiva: Se sustituye $n = h + 1$. Es lo que debo demostrar
+          a partir de la Hipótesis.
+
+    \item Demostración.
+\end{enumerate}
+
+\section{Sucesión aritmética}
+
+\subsection{Definición}
+
+Una sucesión $a_0, a_1, a_2, \ldots$ se llama una sucesión aritmética, si y sólo
+si, existe una constante d tal que
+
+$$ a_k = a_{k - 1} + d \forall N k \ge 1 $$
+
+De lo que se tiene que,
+
+$$ a_n = a_0 + dn $$
+
+\section{Sucesión geométrica}
+
+\subsection{Definición}
+
+Una sucesión $a_0, a_1, a_2, \ldots$ se llama una sucesión geométrica, si y sólo
+si, existe una constante $r$ tal que
+
+$$ a_k = ra_{k - 1} \forall k \in N > 1 $$
+
+De lo que se tiene que,
+
+$$ a_n = a_0r^n \forall n \in N \ge 0 $$
+
+
+\subsection{Definición}
+
+Sea $P(n)$ una propiedad que se define para enteros $n$ y sea $a$ un
+entero fijo. Suponga que los siguientes dos enunciados son verdaderos:
+
+\begin{enumerate}
+    \item $P(n)$ es verdadera.
+
+    \item Para todo entero $k \ge a$, si $P(k)$ es verdadera entonces $P(k+1)$
+          es verdadera.
+\end{enumerate}
+
+\section{Definiciones varias.}
+
+\subsection{Múltiplo:}
+
+$$ a = \dot{b} \iff \exists k \in N / a = b \cdot h  $$
+
+\subsection{Divisible:}
+
+$$ a / b \iff \exists k \in N/ b = b \cdot k  $$
+
+\section{Fórmulas varias.}
+
+\begin{itemize}
+    \item Fórmula cuadrática: $x = \frac{-b \pm \sqrt{b^2 - 4 \cdot a \cdot
+        c}}{2 \cdot a}$
+    \item Suma algebráica: $\sum_{i = 1}^{n} i = \frac{n \cdot (n + 1)}{2}$
+    \item Suma geométrica: $\sum_{i = 0}^{n} r^i = \frac{r^{n + 1} - 1}{r - 1}$
+    \item Suma de cuadrados: $\sum_{i = 1}^{n} i^2 = \frac{n \cdot (n + 1) \cdot (2n + 1)}{6}$
+    \item Suma de impares: $\sum_{i=1}^{n}(2n - 1) = n^2$
+    \item Suma de pares: $\sum_{i=1}^{n}(2n) = n^2 + n$
+    \item $\sum^{n - 1}_{i = 1} i (i + 1) = \frac{n \cdot (n - 1) \cdot (n +
+        2)}{3} \forall n \in E \ge 2$
+    \item $(a \cdot b)^2 = a^2 \cdot b^2$
+    \item $(a + b)^3 = a^3 + 3 \cdot a^2 \cdot b + 3 \cdot a \cdot b^2 + b^3$
+    \item $a^2 - b^2 = (a - b) \cdot (a + b)$
+    \item $ \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{a \cdot d}{b \cdot c}$
+    \item $(\frac{a}{b})^{-1} = \frac{b}{a}$
+    \item $a^m \cdot a^n = a^{m + n}$
+    \item $a^m \cdot a^m = (a \cdot b)^m$
+    \item $a^m \div a^n = a^{m - n}$
+    \item $a^m \div a^m = (a \div b)^m$
+    \item $(a^m)^p = a^{m \cdot p}$
+    \item $a^{-n} = (\frac{1}{a})^n$
+\end{itemize}
+
+\end{document}

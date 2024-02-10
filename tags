@@ -4,5 +4,12 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-l	mates/calculos.py	/^def l(k: int):$/;"	f
-sumatoria	mates/calculos.py	/^def sumatoria(n: int, f: Callable[[int], float], m: int = 0):$/;"	f
+l	calculadora.py	/^def l(k: int):$/;"	f
+main	microprocesadores/test.s	/^main:   ldr x1, puntero_vax1$/;"	l
+puntero_var1	microprocesadores/test.s	/^puntero_var1: .word var1$/;"	l
+puntero_var2	microprocesadores/test.s	/^puntero_var2: .word var2$/;"	l
+puntero_var3	microprocesadores/test.s	/^puntero_var3: .word var3$/;"	l
+sumatoria	calculadora.py	/^def sumatoria(n: int, f: Callable[[int], float], m: int = 0):$/;"	f
+vax1	microprocesadores/test.s	/^vax1:   .word   31$/;"	l
+vax2	microprocesadores/test.s	/^vax2:   .word   43$/;"	l
+vax3	microprocesadores/test.s	/^vax3:   .word   0x1234$/;"	l

@@ -1,0 +1,82 @@
+\documentclass{article}
+
+\begin{document}
+    \begin{titlepage}
+        \vspace*{\stretch{1.0}}
+        \begin{center}
+            \Large\textbf{Conjuntos}\\
+            \large\textit{Cristian Rodríguez}
+        \end{center}
+        \vspace*{\stretch{2.0}}
+    \end{titlepage}
+
+    \section{Idea intuitiva de conjuntos}
+
+    Un conjunto es una colección o agrupamiento de objetos distinguibles
+    entre ellos que, generalmente, tienen algo en común.
+
+
+    \section{Deifinición genérica}
+
+    No importa el orden ni la repetición
+
+    \[
+        A = \{ 1, 2, 3 \} = \{ 1, 3, 2 \} = \{ 2, 3, 1, 2, 1 \}
+    \]
+
+
+    \section{Formas de definir conjuntos}
+
+    \begin{enumerate}
+        \item Por extensión: Nombre de los elementos. $A = \{ 0, 1, 2, 3, 4 \}$
+        \item Por comprensión: Indicando qué propiedad cumplen:
+        \[A = \{ x \in N \mid x \le 4\}\]
+    \end{enumerate}
+
+
+    \section{Igualdad de conjuntos}
+
+    Dos conjuntos son iguales si tienen los mismos elementos.
+
+    \subsection{Inclusión amplia}
+
+    Decimos que un conjunto $A$ está incluido ampliamente en un conjunto
+    $B$, si todo elemento de $A$ es también elemento de $B$.
+
+    \[
+        A \subseteq B \iff \forall x \in A \rightarrow x \in B
+    \]
+
+    Decimos que $A$ es un subconjunto de $B$.
+    La inclusión amplia admite igualdad.
+
+    \subsubsection{Propiedad reflexiva}
+
+    Todo conjunto está incluido en sí mismo.
+
+    \subsection{Inclusión estricta}
+
+    \[
+        A \subset B \iff \forall x \in A \rightarrow x \in B \land \exists x \in B \mid x \notin A
+    \]
+
+    \section{Conjunto vacío}
+
+    Aquel conjunto que no tiene elementos lo llamamos conjunto vacío. \newline
+    Símbolo: $\emptyset = \{ \}$. \newline
+    No se debe usar ${ \{ \emptyset \} }$ \newline
+    El conjunto vacío está incluido en todos los conjuntos.
+    
+    \section{Conjunto referencial o universal}
+
+    Llamamos así al conjunto que contiene todos los elementos con los cuales
+    estamos trabajando.
+
+    Símbolo: $\Omega$
+
+    \section{Conjunto de partes o conjunto potencia}
+
+    Se llaman así al conjunto de todos los posibles subconjuntos de un
+    conjunto.
+
+\end{document}
